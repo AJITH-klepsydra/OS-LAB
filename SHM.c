@@ -16,13 +16,10 @@ int main(){
 		int data = rand();
 		printf("Data For the shared memory: %d",data);
 		sprintf(str, "%d", data);
-		
 		}
 	else if(choice == 0)
 	{
 		printf("\nVALUE IN THE SHM: %s\n",str);
-		
-		shmctl(shmId,IPC_RMID,NULL);
 		}
 		else{
 		printf("\nDetaching ...\nKilling...\n");
